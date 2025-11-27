@@ -1,76 +1,299 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Guitar Hobby Landing Page</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Discover the Joy of Playing Guitar</h1>
-      <p>Whether you're a beginner or looking to improve, let music become your favorite hobby.</p>
-      <a href="#benefits" class="cta-btn">Start Your Journey</a>
-    </div>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vibe Vies - Discover Your Musical Journey</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="/_sdk/element_sdk.js"></script>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+ </head>
+ <body>
+  <header>
+   <nav class="main-container">
+<img class="logo-placeholder" src="Vibe Vies Logo.png" alt="Logo">    <ul class="nav-links">
+     <li><a href="#home">Home</a></li>
+     <li><a href="#instruments">Instruments</a></li>
+     <li><a href="#journey">Your Journey</a></li>
+     <li><a href="#stories">Stories</a></li>
+     <li><a href="#contact">Contact</a></li>
+    </ul>
+   </nav>
   </header>
-
-  <section id="benefits" class="section">
-    <h2>Benefits of Learning Guitar</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Stress Relief</h3>
-        <p>Playing guitar helps calm the mind and reduce stress after a long day.</p>
+  <main>
+   <section class="hero" id="home">
+    <div class="main-container">
+     <div class="hero-content">
+      <div class="hero-text">
+       <h1 id="hero-title-text">Discover Your Musical Journey</h1>
+       <p id="hero-subtitle-text">Find your passion, pick your instrument, and start creating music today</p>
+       <div class="cta-buttons"><button class="btn-primary" id="btn-primary-text">Start Your Journey</button> <button class="btn-secondary" id="btn-secondary-text">Explore Instruments</button>
+       </div>
+       <div class="wave-container">
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+        <div class="wave-bar"></div>
+       </div>
       </div>
-      <div class="card">
-        <h3>Creativity Boost</h3>
-        <p>Experiment with chords, riffs, and melodies to express yourself.</p>
+      <div class="hero-featured"><span class="featured-label">🔥 MOST POPULAR</span>
+       <div class="featured-instrument-icon">
+        🎸
+       </div>
+       <h3 class="featured-instrument-name">Guitar</h3>
+       <p class="featured-instrument-desc">The most versatile instrument to start your musical journey. Perfect for all skill levels.</p>
+       <div class="featured-stats">
+        <div class="stat-item"><span class="stat-number">12K+</span> <span class="stat-label">Students</span>
+        </div>
+        <div class="stat-item"><span class="stat-number">4.9★</span> <span class="stat-label">Rating</span>
+        </div>
+        <div class="stat-item"><span class="stat-number">50+</span> <span class="stat-label">Lessons</span>
+        </div>
+       </div><button class="featured-btn">Learn Guitar Now</button>
       </div>
-      <div class="card">
-        <h3>Social Connection</h3>
-        <p>Join jam sessions, bands, or simply play for friends and family.</p>
-      </div>
+     </div>
     </div>
-  </section>
-
-  <section id="disadvantages" class="section alt">
-    <h2>Disadvantages to Consider</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Finger Pain</h3>
-        <p>Beginners often experience discomfort and calluses.</p>
+   </section>
+   <section class="instruments" id="instruments">
+    <div class="main-container">
+     <h2 id="instruments-title-text">Choose Your Instrument</h2>
+     <p class="section-subtitle">Every great musician starts with choosing their voice</p>
+     <div class="instruments-grid">
+      <div class="instrument-card">
+       <div class="instrument-icon">
+        🎸
+       </div>
+       <h3>Guitar</h3>
+       <p>The most versatile instrument. Perfect for beginners and experienced players alike. Create melodies that touch the soul.</p><span class="difficulty-badge">Beginner Friendly</span> <br><button class="learn-btn">Start Learning</button>
       </div>
-      <div class="card">
-        <h3>Learning Curve</h3>
-        <p>Mastering techniques like barre chords takes time.</p>
+      <div class="instrument-card">
+       <div class="instrument-icon">
+        🎹
+       </div>
+       <h3>Piano</h3>
+       <p>Master the foundation of music theory. From classical to modern, unlock endless creative possibilities.</p><span class="difficulty-badge">All Levels</span> <br><button class="learn-btn">Start Learning</button>
       </div>
-      <div class="card">
-        <h3>Instrument Costs</h3>
-        <p>Quality guitars and accessories can be pricey.</p>
+      <div class="instrument-card">
+       <div class="instrument-icon">
+        🥁
+       </div>
+       <h3>Drums</h3>
+       <p>Feel the rhythm, be the heartbeat. Perfect for those who love energy and want to drive the band.</p><span class="difficulty-badge">Intermediate</span> <br><button class="learn-btn">Start Learning</button>
       </div>
+      <div class="instrument-card">
+       <div class="instrument-icon">
+        🎤
+       </div>
+       <h3>Vocals</h3>
+       <p>Your voice is your instrument. Learn to express emotions and tell stories through the power of song.</p><span class="difficulty-badge">Beginner Friendly</span> <br><button class="learn-btn">Start Learning</button>
+      </div>
+      <div class="instrument-card">
+       <div class="instrument-icon">
+        🎻
+       </div>
+       <h3>Violin</h3>
+       <p>Elegant and expressive. Challenge yourself with one of the most beautiful and rewarding instruments.</p><span class="difficulty-badge">Advanced</span> <br><button class="learn-btn">Start Learning</button>
+      </div>
+      <div class="instrument-card">
+       <div class="instrument-icon">
+        🎺
+       </div>
+       <h3>Trumpet</h3>
+       <p>Bold and brilliant. Make your presence known with powerful brass that commands attention.</p><span class="difficulty-badge">Intermediate</span> <br><button class="learn-btn">Start Learning</button>
+      </div>
+     </div>
     </div>
-  </section>
-
-  <section id="clips" class="section">
-    <h2>Popular Guitar Clips</h2>
-    <div class="video-grid">
-      <iframe src="https://www.youtube.com/embed/2VbB9TSthcE" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/fJ9rUzIMcZQ" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/kXYiU_JCYtU" allowfullscreen></iframe>
+   </section>
+   <section class="journey" id="journey">
+    <div class="main-container">
+     <h2 id="journey-title-text">Your Musical Journey Starts Here</h2>
+     <div class="journey-steps">
+      <div class="journey-step">
+       <div class="step-number">
+        1
+       </div>
+       <h3>Discover</h3>
+       <p>Explore different instruments and find what speaks to your soul. Take our quiz to find your perfect match.</p>
+      </div>
+      <div class="journey-step">
+       <div class="step-number">
+        2
+       </div>
+       <h3>Learn</h3>
+       <p>Start with basics or advance your skills. Our expert instructors guide you every step of the way.</p>
+      </div>
+      <div class="journey-step">
+       <div class="step-number">
+        3
+       </div>
+       <h3>Practice</h3>
+       <p>Build confidence through structured practice routines. Track your progress and celebrate milestones.</p>
+      </div>
+      <div class="journey-step">
+       <div class="step-number">
+        4
+       </div>
+       <h3>Create</h3>
+       <p>Express yourself through music. Share your creations with a community of fellow musicians.</p>
+      </div>
+     </div>
     </div>
-  </section>
-
-  <section id="riffs" class="section alt">
-    <h2>Iconic Guitar Riffs</h2>
-    <div class="video-grid">
-      <iframe src="https://www.youtube.com/embed/SB-qEYVdvXA" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/pAgnJDJN4VA" allowfullscreen></iframe>
-      <iframe src="https://www.youtube.com/embed/3MteSlpxCpo" allowfullscreen></iframe>
+   </section>
+   <section class="music-sites">
+    <div class="main-container">
+     <h2>Explore Popular Music Platforms</h2>
+     <p class="section-subtitle">Connect with the global music community through these popular platforms</p>
+     <div class="music-sites-grid"><a href="https://www.spotify.com" target="_blank" rel="noopener noreferrer" class="music-site-card">
+       <div class="site-icon">
+        🎵
+       </div><h3>Spotify</h3><p>Stream millions of songs and discover new music</p></a> <a href="https://www.soundcloud.com" target="_blank" rel="noopener noreferrer" class="music-site-card">
+       <div class="site-icon">
+        ☁️
+       </div><h3>SoundCloud</h3><p>Share your music and connect with artists worldwide</p></a> <a href="https://www.youtube.com/music" target="_blank" rel="noopener noreferrer" class="music-site-card">
+       <div class="site-icon">
+        ▶️
+       </div><h3>YouTube Music</h3><p>Watch, listen, and learn from music videos</p></a> <a href="https://music.apple.com" target="_blank" rel="noopener noreferrer" class="music-site-card">
+       <div class="site-icon">
+        🍎
+       </div><h3>Apple Music</h3><p>Premium music streaming and exclusive content</p></a> <a href="https://www.bandcamp.com" target="_blank" rel="noopener noreferrer" class="music-site-card">
+       <div class="site-icon">
+        🎸
+       </div><h3>Bandcamp</h3><p>Support independent artists directly</p></a> <a href="https://www.ultimate-guitar.com" target="_blank" rel="noopener noreferrer" class="music-site-card">
+       <div class="site-icon">
+        🎼
+       </div><h3>Ultimate Guitar</h3><p>Tabs, chords, and music lessons for guitarists</p></a>
+     </div>
     </div>
-  </section>
-
-  <footer class="footer">
-    <p>© 2025 Guitar Hobby Landing Page | All rights reserved.</p>
+   </section>
+   <section class="testimonials" id="stories">
+    <div class="main-container">
+     <h2>Stories from Our Community</h2>
+     <p class="section-subtitle" style="margin-bottom: 2rem;">Coming soon - hear from our amazing students!</p>
+    </div>
+   </section>
+   <section class="final-cta">
+    <div class="main-container">
+     <h2>Ready to Begin?</h2>
+     <p>Join thousands of students who discovered their love for music. Your instrument is waiting.</p>
+     <div class="cta-buttons"><button class="btn-primary">Get Started Free</button> <button class="btn-secondary">Browse All Courses</button>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer id="contact">
+   <div class="main-container">
+    <div class="footer-content">
+     <div class="footer-section">
+      <h4>Learn</h4>
+      <ul>
+       <li><a href="#courses">All Courses</a></li>
+       <li><a href="#instructors">Our Instructors</a></li>
+       <li><a href="#pricing">Pricing</a></li>
+       <li><a href="#free-trial">Free Trial</a></li>
+      </ul>
+     </div>
+     <div class="footer-section">
+      <h4>Support</h4>
+      <ul>
+       <li><a href="#help">Help Center</a></li>
+       <li><a href="#faq">FAQ</a></li>
+       <li><a href="#contact">Contact Us</a></li>
+       <li><a href="#community">Community</a></li>
+      </ul>
+     </div>
+     <div class="footer-section">
+      <h4>Company</h4>
+      <ul>
+       <li><a href="#about">About Us</a></li>
+       <li><a href="#blog">Blog</a></li>
+       <li><a href="#careers">Careers</a></li>
+       <li><a href="#press">Press Kit</a></li>
+      </ul>
+     </div>
+     <div class="footer-section">
+      <h4>Connect</h4>
+      <div class="social-icons"><a href="#facebook" class="social-icon" aria-label="Facebook">f</a> <a href="#twitter" class="social-icon" aria-label="Twitter">𝕏</a> <a href="#instagram" class="social-icon" aria-label="Instagram">📷</a> <a href="#youtube" class="social-icon" aria-label="YouTube">▶</a>
+      </div>
+     </div>
+    </div>
+    <div class="copyright">
+     <p>© 2024 Vibe Vies. Inspiring musicians worldwide.</p>
+    </div>
+   </div>
   </footer>
-</body>
+  <!--This is AI-->
+  <script>
+    const defaultConfig = {
+      hero_title: 'Discover Your Musical Journey',
+      hero_subtitle: 'Find your passion, pick your instrument, and start creating music today',
+      button_primary_text: 'Start Your Journey',
+      button_secondary_text: 'Explore Instruments',
+      instruments_title: 'Choose Your Instrument',
+      journey_title: 'Your Musical Journey Starts Here'
+    };
+
+    async function onConfigChange(config) {
+      const heroTitle = document.getElementById('hero-title-text');
+      const heroSubtitle = document.getElementById('hero-subtitle-text');
+      const btnPrimary = document.getElementById('btn-primary-text');
+      const btnSecondary = document.getElementById('btn-secondary-text');
+      const instrumentsTitle = document.getElementById('instruments-title-text');
+      const journeyTitle = document.getElementById('journey-title-text');
+
+      if (heroTitle) {
+        heroTitle.textContent = config.hero_title || defaultConfig.hero_title;
+      }
+      if (heroSubtitle) {
+        heroSubtitle.textContent = config.hero_subtitle || defaultConfig.hero_subtitle;
+      }
+      if (btnPrimary) {
+        btnPrimary.textContent = config.button_primary_text || defaultConfig.button_primary_text;
+      }
+      if (btnSecondary) {
+        btnSecondary.textContent = config.button_secondary_text || defaultConfig.button_secondary_text;
+      }
+      if (instrumentsTitle) {
+        instrumentsTitle.textContent = config.instruments_title || defaultConfig.instruments_title;
+      }
+      if (journeyTitle) {
+        journeyTitle.textContent = config.journey_title || defaultConfig.journey_title;
+      }
+    }
+
+    function mapToCapabilities(config) {
+      return {
+        recolorables: [],
+        borderables: [],
+        fontEditable: undefined,
+        fontSizeable: undefined
+      };
+    }
+
+    function mapToEditPanelValues(config) {
+      return new Map([
+        ['hero_title', config.hero_title || defaultConfig.hero_title],
+        ['hero_subtitle', config.hero_subtitle || defaultConfig.hero_subtitle],
+        ['button_primary_text', config.button_primary_text || defaultConfig.button_primary_text],
+        ['button_secondary_text', config.button_secondary_text || defaultConfig.button_secondary_text],
+        ['instruments_title', config.instruments_title || defaultConfig.instruments_title],
+        ['journey_title', config.journey_title || defaultConfig.journey_title]
+      ]);
+    }
+
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities,
+        mapToEditPanelValues
+      });
+    }
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a3ea995121485f3',t:'MTc2NDA0NzY2Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
