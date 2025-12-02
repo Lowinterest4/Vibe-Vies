@@ -5,9 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vibe Vies - Discover Your Musical Journey</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="/_sdk/element_sdk.js"></script>
-  <style>@view-transition { navigation: auto; }</style>
-  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
   <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
  </head>
  <body>
@@ -227,73 +224,4 @@
     </div>
    </div>
   </footer>
-  <!--This is AI-->
-  <script>
-    const defaultConfig = {
-      hero_title: 'Discover Your Musical Journey',
-      hero_subtitle: 'Find your passion, pick your instrument, and start creating music today',
-      button_primary_text: 'Start Your Journey',
-      button_secondary_text: 'Explore Instruments',
-      instruments_title: 'Choose Your Instrument',
-      journey_title: 'Your Musical Journey Starts Here'
-    };
-
-    async function onConfigChange(config) {
-      const heroTitle = document.getElementById('hero-title-text');
-      const heroSubtitle = document.getElementById('hero-subtitle-text');
-      const btnPrimary = document.getElementById('btn-primary-text');
-      const btnSecondary = document.getElementById('btn-secondary-text');
-      const instrumentsTitle = document.getElementById('instruments-title-text');
-      const journeyTitle = document.getElementById('journey-title-text');
-
-      if (heroTitle) {
-        heroTitle.textContent = config.hero_title || defaultConfig.hero_title;
-      }
-      if (heroSubtitle) {
-        heroSubtitle.textContent = config.hero_subtitle || defaultConfig.hero_subtitle;
-      }
-      if (btnPrimary) {
-        btnPrimary.textContent = config.button_primary_text || defaultConfig.button_primary_text;
-      }
-      if (btnSecondary) {
-        btnSecondary.textContent = config.button_secondary_text || defaultConfig.button_secondary_text;
-      }
-      if (instrumentsTitle) {
-        instrumentsTitle.textContent = config.instruments_title || defaultConfig.instruments_title;
-      }
-      if (journeyTitle) {
-        journeyTitle.textContent = config.journey_title || defaultConfig.journey_title;
-      }
-    }
-
-    function mapToCapabilities(config) {
-      return {
-        recolorables: [],
-        borderables: [],
-        fontEditable: undefined,
-        fontSizeable: undefined
-      };
-    }
-
-    function mapToEditPanelValues(config) {
-      return new Map([
-        ['hero_title', config.hero_title || defaultConfig.hero_title],
-        ['hero_subtitle', config.hero_subtitle || defaultConfig.hero_subtitle],
-        ['button_primary_text', config.button_primary_text || defaultConfig.button_primary_text],
-        ['button_secondary_text', config.button_secondary_text || defaultConfig.button_secondary_text],
-        ['instruments_title', config.instruments_title || defaultConfig.instruments_title],
-        ['journey_title', config.journey_title || defaultConfig.journey_title]
-      ]);
-    }
-
-    if (window.elementSdk) {
-      window.elementSdk.init({
-        defaultConfig,
-        onConfigChange,
-        mapToCapabilities,
-        mapToEditPanelValues
-      });
-    }
-  </script>
- <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a3ea995121485f3',t:'MTc2NDA0NzY2Ni4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
