@@ -465,6 +465,20 @@
       transform: scale(1.05);
     }
 
+    .emb {
+    	display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	padding: 20px;
+      background: rgba(26, 26, 26, 0.5);
+  	}
+
+  	.emb-in {
+  	width: 100%;
+  	padding: 15px;
+  	margin: 10px auto;
+  	}
+
     /* Journey Section */
     .journey {
       padding: 4rem 0;
