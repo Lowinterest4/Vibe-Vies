@@ -89,7 +89,7 @@
       padding: 0.5rem 0;
       transition: color 0.3s ease;
     }
-
+/* Adds underlines and coloring to the nav links*/
     .nav-links a::after {
       content: '';
       position: absolute;
@@ -125,7 +125,7 @@
     .hero-text {
       text-align: left;
     }
-
+/*Adds gradient to the text and a slight glow using colored shadows*/
     .hero-text h1 {
       font-size: 4rem;
       margin-bottom: 1.5rem;
@@ -152,7 +152,7 @@
       color: #cccccc;
       line-height: 1.6;
     }
-
+/*Makes that pulsing effect behind the guitar*/
     .hero-featured {
       background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
       border-radius: 30px;
@@ -206,7 +206,7 @@
       z-index: 1;
       animation: float 3s ease-in-out infinite;
     }
-
+/*Makes the icon, the guitar bob up and down*/
     @keyframes float {
       0%, 100% { transform: translateY(0px); }
       50% { transform: translateY(-20px); }
@@ -323,7 +323,7 @@
       box-shadow: 0 6px 25px rgba(255, 0, 0, 0.4);
     }
 
-    /* Wave Animation */
+    /* Makes that wave animation for the music bar things, looks dope ngl */
     .wave-container {
       display: flex;
       justify-content: center;
