@@ -136,7 +136,7 @@
       animation: glow 2s ease-in-out infinite alternate;
       line-height: 1.2;
     }
-
+/* adds glow effect on hovered buttons */
     @keyframes glow {
       from {
         filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.3));
@@ -152,7 +152,7 @@
       color: #cccccc;
       line-height: 1.6;
     }
-/*Makes that pulsing effect behind the guitar*/
+
     .hero-featured {
       background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
       border-radius: 30px;
@@ -174,7 +174,7 @@
       background: radial-gradient(circle, rgba(255, 0, 0, 0.15) 0%, transparent 70%);
       animation: pulse 3s ease-in-out infinite;
     }
-
+/*Makes that pulsing effect behind the guitar*/
     @keyframes pulse {
       0%, 100% { transform: scale(1); opacity: 0.5; }
       50% { transform: scale(1.1); opacity: 0.8; }
